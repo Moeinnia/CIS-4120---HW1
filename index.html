@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="app-container">
+      <section class="top-section">
+        <input type="text" class="search-input" placeholder="Search courses..." />
+        <div class="search-results">
+          <h3 class="search-results-title">Search Results</h3>
+          <div class="search-result-card">
+              <h3 class="course-title-text">
+                CIS 1600 - Discrete Mathematics
+              </h3>
+            <div class="sections-table">
+              <div class="section-row header">
+                <span>Sec</span>
+                <span>Days/Time</span>
+                <span>Instructor</span>
+              </div>
+
+              <div class="section-row">
+                <span class="warning-icon">⚠️ 001<br><span class="seats-info">35/140</span></span>
+                <span>TR 8:30-<br>9:59a</span>
+                <span>R. Gandhi</span>
+                <button class="btn-sm register-btn">Register</button>
+                <button class="icon-btn bookmark-btn" title="Save for later">🔖</button>
+              </div>
+              <div class="section-row">
+                <span class="warning-icon">⚠️ 002<br><span class="seats-info">125/140</span></span>
+                <span>TR 10:15-<br>11:44a</span>
+                <span>R. Gandhi</span>
+                <button class="btn-sm register-btn">Register</button>
+                <button class="icon-btn bookmark-btn" title="Save for later">🔖</button>
+              </div>
+              <div class="section-row sub-header">Recitations</div>
+              <div class="section-row">
+                <span>201<br><span class="seats-info">19/20</span></span>
+                <span>F 10:15-11:14a</span>
+                <span>Staff</span>
+                <button class="btn-sm register-btn">Register</button>
+                <button class="icon-btn bookmark-btn" title="Save for later">🔖</button>
+              </div>
+              <div class="section-row">
+                <span>202<br><span class="seats-info">19/20</span></span>
+                <span>F 10:15-11:14a</span>
+                <span>Staff</span>
+                <button class="btn-sm register-btn">Register</button>
+                <button class="icon-btn bookmark-btn" title="Save for later">🔖</button>
+              </div>
+              <div class="section-row">
+                <span>205<br><span class="seats-info">20/20</span></span>
+                <span>F 1:45-2:44p</span>
+                <span><span class="warning-icon">⚠️</span> Staff</span>
+                <button class="btn-sm register-btn">Register</button>
+                <button class="icon-btn bookmark-btn" title="Save for later">🔖</button>
+              </div>
+              <div class="section-row">
+                <span>206<br><span class="seats-info">20/20</span></span>
+                <span>F 1:45-2:44p</span>
+                <span><span class="warning-icon">⚠️</span> Staff</span>
+                <button class="btn-sm register-btn">Register</button>
+                <button class="icon-btn bookmark-btn" title="Save for later">🔖</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="drag-handle" aria-hidden="true"></div>
+
+      <section class="middle-section">
+        <h2 class="section-title">Your Course Cart</h2>
+          <h3 class="total-credits"> Total Credits: 3</h3>
+
+        <div class="cart-card">
+            <h3 class="course-title-text">
+              CIS 4120 - Intro to HCI ✔️  
+            </h3>
+          <div class="sections-table">
+            <div class="section-row header-cart">
+              <span>Sec</span><span>Days/Time</span><span>Instructor</span><span></span><span></span>
+            </div>
+            <div class="section-row">
+              <span>401</span>
+              <span>MW 1:45-<br>3:15p</span>
+              <span>Andrew Head</span>
+              <button class="btn-sm drop-btn">Drop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CIS 5210 -->
+        <div class="cart-card">
+            <h3 class="course-title-text">
+              CIS 5210 - Artificial Intelligence ✔️
+            </h3>
+          <div class="sections-table">
+            <div class="section-row header-cart">
+              <span>Sec</span><span>Days/Time</span><span>Instructor</span><span></span><span></span>
+            </div>
+            <div class="section-row">
+              <span>401</span>
+              <span>TR 12:00-<br>1:30p</span>
+              <span>Chris Callison-Burch</span>
+              <button class="btn-sm drop-btn">Drop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BIOL 4266 -->
+        <div class="cart-card">
+          <h3 class="course-title-text">
+              BIOL 4266 - Molecular Genetics of Neurological Disease ✔️
+            </h3>
+          <div class="sections-table">
+            <div class="section-row header-cart">
+              <span>Sec</span><span>Days/Time</span><span>Instructor</span><span></span><span></span>
+            </div>
+            <div class="section-row">
+              <span>401</span>
+              <span>TR 10:15-<br>11:45a</span>
+              <span>Nancy Bonini</span>
+              <button class="btn-sm drop-btn">Drop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BIOL 3999 Saved -->
+        <div class="cart-card">
+          <h3 class="course-title-text">
+              BIOL 3999 - Independent Study
+            </h3>
+          <div class="sections-table">
+            <div class="section-row header">
+              <span>Sec</span><span>Days/Time</span><span>Instructor</span><span></span><span></span>
+            </div>
+            <div class="section-row">
+              <span>006</span>
+              <span>TBD</span>
+              <span>Erol Akcay</span>
+              <button class="btn-sm register-btn">Register</button>
+              <button class="icon-btn trash-btn" title="Remove">🗑️</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="drag-handle" aria-hidden="true"></div>
+
+      <section class="bottom-section">
+        <h2 class="section-title">Weekly Schedule</h2>
+        <div class="calendar">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-label">10&nbsp;am</td>
+                <td></td>
+                <td><div class="event">BIOL 4266<br>10:15-11:45a</div></td>
+                <td></td>
+                <td><div class="event">BIOL 4266<br>10:15-11:45a</div></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-label">12&nbsp;pm</td>
+                <td></td>
+                <td><div class="event">CIS 5210<br>12:00-1:30p</div></td>
+                <td></td>
+                <td><div class="event">CIS 5210<br>12:00-1:30p</div></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time-label">2&nbsp;pm</td>
+                <td><div class="event">CIS 4120<br>1:45-3:15p</div></td>
+                <td></td>
+                <td><div class="event">CIS 4120<br>1:45-3:15p</div></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
